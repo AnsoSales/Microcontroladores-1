@@ -93,3 +93,34 @@ anular  Pisca2 ()
 	};
 
 6. Reescreva o código da questão 3 usando a função da questão 4.
+# Incluem  < msp430g2553.h >
+	# Define  BTN BIT2
+	# Define  LED1 BIT0
+	# Define  LED2 BIT6
+	
+	anular  Pisca2 ()
+	{
+		P1OUT | = LED1 + LED2;
+		P1OUT & = ~ (LED1 + LED2); // 1 vez
+		
+		P1OUT | = LED1 + LED2;
+		P1OUT & = ~ (LED1 + LED2); // 2 vezes
+	}
+	
+	Void  main ( void )
+	{
+		WDTCTL = WDTPW | WDTHOLD;
+		P1DIR = LED1 + LED2;
+		P1OUT = 0 ;
+		Para (;;)
+		{
+			se (P1IN & BTN == 0 ) // Botão pressionado
+			{
+				Pisca2 ();
+				
+				Enquanto (P1IN & BTN == 0 ) {} // Aguardar o botão para ser pressionado para continuar.
+			}
+			outro
+				P1OUT & = ~ (LED1 + LED2); // Apagar os leds
+		}
+	};

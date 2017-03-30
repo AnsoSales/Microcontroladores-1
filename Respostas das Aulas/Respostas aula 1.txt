@@ -1,19 +1,19 @@
 Perguntas
-1 - O que s„o sistemas embarcados?
-R - S„o sistemas computacionais completos com um hardware e um software dedicados para uma determinada aplicaÁ„o.
+1 - O que s√£o sistemas embarcados?
+R - S√£o sistemas computacionais completos com um hardware e um software dedicados para uma determinada aplica√ß√£o.
 
-2 - O que s„o sistemas microprocessados?
-R - S„o microprocessadores (um ou mais) que pode realizar amazenamento, processamento e controle de informaÁıes.
+2 - O que s√£o sistemas microprocessados?
+R - S√£o microprocessadores (um ou mais) que pode realizar amazenamento, processamento e controle de informa√ß√µes.
 
-AplicaÁıes de Sistemas Embarcados:
+Aplica√ß√µes de Sistemas Embarcados:
 
-Industria Automotiva: injeÁ„o eletronica, alarmes, controle de traÁ„o.
+Industria Automotiva: inje√ß√£o eletronica, alarmes, controle de tra√ß√£o.
 Eletrodomesticos: SmartTv, Micro-ondas.
-AutomaÁ„o Industrial: SeguranÁa operacional, Velocidade de produÁ„o, seguranÁa operacional.
- Arquitetura: x86 de 32 bits, x64 de 64 bits, ARMv7 (arquitetura muito utilizada em dispositivos mÛveis como aparelhos celulares, tablets, notebooks).
+Automa√ß√£o Industrial: Seguran√ßa operacional, Velocidade de produ√ß√£o, seguran√ßa operacional.
+ Arquitetura: x86 de 32 bits, x64 de 64 bits, ARMv7 (arquitetura muito utilizada em dispositivos m√≥veis como aparelhos celulares, tablets, notebooks).
 
-3 - Por que usar o MSP430 e n„o outro microcontrolador?
+3 - Por que usar o MSP430 e n√£o outro microcontrolador?
 
-R - Por que usar o MSP430 e n„o outro microcontrolador?
+R - Por que usar o MSP430 e n√£o outro microcontrolador?
 
 R - O MSP430 tem um custo baixo, tem um bom desempenho para o aprendizado, utiliza linguagem c e assembly.

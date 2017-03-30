@@ -1,0 +1,65 @@
+Dados: 29/03/2017
+
+Para as questões 2 a 5, considere que as variáveis ??«f», «g», «h», «i» e «j» são do tipo todo, ] 'É do tipo inteiro. Estas variáveis ??estão armazenadas nos seguintes registadores:
+	F: R4
+	G: R5
+	H: R6
+	I: R7
+	J R8
+	A: R9
+Utilizar os registradores R11, R12, R13, R14 e R15 para armazenar valores temporários.
+
+1. Faça os trechos de código de montagem do MSP430 para:
+	(A) Somente setar o bit menos significativo de R5.
+		Bis.w # 1, R5
+	
+	(B) Somente setar dois bits de R6: o menos significativo eo segundo menos significativo.
+		Bis.w # 3, R6
+		
+	(C) Somente mais baixo menos significativo de R7.
+		And.w #FFFBh, R7
+	
+	(D) Somente o terceiro eo quarto bits menos significativo de R8.
+		And.w # FFF3h, R8
+	
+	(E) Somente inversor o bit mais significativo de R9.
+		Xor.w # 8000h, R9
+	
+	(F) Inverter o nibble mais significativo de R10, e setar o nibble menos significativo de R10.
+		Xor.w # F000h, R10
+
+2. "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
+
+	Se (i> j) f = g + h + 10;
+	Mais f = gh-10;
+	
+	Cmp R7, R8; I = R7 | J = R8
+	Jl ELSE; R8 <R7 || R7> R8
+	Mov. R5, R4; F = g		
+	R6, R4; F + = h
+	Add.w # 10, R4; F + = 10
+	Jmp END
+	
+	ELSE: mov.w R5, R4; F = g
+	R6, R4; F - = h
+	N ° 10, R4; F = 10
+	
+3. "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
+	Não salvar R10
+	
+	Enquanto (save [i]! = K) i ++;
+	
+	LOOP: mov.w R7, R12
+	Rla R12
+	
+	Jmp LOOP
+	FIM:
+	
+
+4. "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
+
+	Para (i = 0; i <100; i ++) A [i] = i * 2;
+
+5. "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
+
+	Para (i = 99; i> = 0; i-) A [i] = i * 2;  

@@ -1,0 +1,57 @@
+Dados: 31/03/2017
+
+Para cada questão, escreva Funções em C e / sub-rotinas na linguagem Assembly do MSP430. Reaproveite Funções e sub-rotinas de uma questão em outro, se assim desejar. Em consequência, os sub-rotinas são utilizados em um código maior, portanto, utilizar adequadamente os registradores R4 a R11. As instruções da linguagem Assembly do MSP430 se encontram ao final deste texto.
+
+1. (a) Escreva uma função em C ração quadrada «x 'de uma variação» S' do tipo float, utilizando o seguinte algoritmo: após 'n + 1' iterações, a raiz quadrada de 'S' é dada Por
+
+	X (n + 1) = (x (n) + S / x (n)) / 2
+
+O protótipo da função é:
+
+	Unsigned int Raiz_Quadrada (unsigned int S);
+
+(B) Escreva uma sub-rotina equivalente na linguagem Assembly do MSP430. A variável 'S' pelo observador R15, ea raiz quadrada de 'S' (ou seja, a variável 'x') também é registrada pelo registrador R15.
+
+2. (a) Comportamento em função do tipo de veículo 'x' elevado à 'N'-ésima Potência, seguindo o seguinte protótipo: 
+
+	Int Potencia (int x, int N);
+
+(B) Escreva uma sub-rotina equivalente na linguagem Assembly do MSP430. 'X' e 'n' são fornecidos através dos registadores R15 e R14, respectivamente, e não devem ser registados no registador R15.
+
+3. É necessário que o sistema de classificação de dados seja composto de 16 bits. 'A' e 'b' são fornecidos através dos registadores R15 e R14, respectivamente, e uma saída deve ser feita através do registador R15.
+
+4. Uma vez que o valor de saída é de 16 bits, o valor de saída é de 16 bits. 'A' e 'b' são fornecidos através dos registadores R15 e R14, respectivamente, e uma saída deve ser feita através do registador R15.
+
+5. (a) Escreva uma função em C que indica uma primalidade de uma variável inteira sem sinal, retornando o valor 1 para o número para primo, e 0, caso contrário. Siga o seguinte protótipo:
+
+	Int Primalidade (unsigned int x);
+
+(B) Escreva uma sub-rotina equivalente na linguagem Assembly do MSP430. A variável de entrada é pelo registrador R15, eo valor da saída também.
+
+6. Escreva uma função em C que calcula o duplo fatorial de n, representado por n !. Se n para ímpar, n !! = 1 * 3 * 5 * ... * n, e se n para par, n !! = 2 * 4 * 6 * ... * n. Por exemplo, 9 !! = 1 * 3 * 5 * 7 * 9 = 945 e 10 !! = 2 * 4 * 6 * 8 * 10 = 3840. Além disso, 0 !! = 1 !! = 1.
+O protótipo da função é:
+
+	Unsigned longo longo DuploFatorial (unsigned longo longo n);
+
+7. (a) Escreva uma função em C que calcula uma função exponencial da seguinte forma:
+	
+Considere o cálculo para o termo n = 20. O protótipo da função é duplo ExpTaylor (duplo x);
+(B) Escrever uma sub-rotina equivalente na linguagem Assembléia do MSP430, mas considere que os valores de entrada e de saída são inteiros de 16 bits. A variável de entrada é pelo registrador R15, eo valor da saída também.
+
+8. Escreva uma sub-rotina na linguagem Assembléia do MSP430 que indica um vetor que é ordenado de forma decrescente. Por exemplo:
+[5 4 3 2 1] e [90 23 20 10] estão ordenados de forma decrescente.
+[1 2 3 4 5] e [1 2 3 2] não estão.
+O primeiro endereço do vetor é fornecido pelo registrador R15, o tamanho do vetor é fornecido pelo registrador R14. A saída não é um registrador R15, valendo 1 quando o vetor é ordenado de forma decrescente, e valendo 0 em caso contrário.
+
+9. Escreva uma sub-rotina na linguagem Montagem do MSP430 que calcula o produto escalar de dois vetores, «a» e «b»:
+	
+O primeiro endereço do vetor 'a' deve ser passado para o registrador R15, o primeiro endereço do vetor 'B' deve ser passado para o registrador R13, o tamanho do vetor deve ser passado para o registrador R13. A saída não deve ser registrada R15.
+
+10. (a) Escreva uma função em C que indica se um vetor é palíndromo. Por exemplo:
+	[1 2 3 2 1] e [0 10 20 20 10 0] são palíndromos.
+	[5 4 3 2 1] e [1 2 3 2] não são.
+Se o vector para palíndromo, retorne o valor 1. Caso contrário, retorne o valor 0. O protótipo da função é:
+
+	Int Palindromo (int vetor [], int tamanho);
+
+(B) Escreva uma sub-rotina equivalente na linguagem Assembly do MSP430. O endereço do vetor da entrada é dado pelo registrador R15, o tamanho do vetor é dado pelo registrador R14, eo resultado é dado pelo registrador R15.

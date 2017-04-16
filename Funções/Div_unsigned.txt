@@ -1,0 +1,22 @@
+DIVISAO_EM_C
+//----------------------------------------------------//
+unsigned int Div_unsigned(unsigned int a, unsigned int b){
+	unsigned int i;
+	for(i = 0;  a >= b; i++){
+		a = a - b;
+	}
+}
+//---------------------------------------------------//
+ASSEMBLY_VERSION
+//---------------------------------------------------//
+
+Div_unsigned:
+		clr R13;
+for_div		cmp R14,R15
+		jl End_for_div
+		sub R14,R15
+		inc R13
+		jmp for_div
+End_for_div: 	mov R13,R15
+		ret
+//----------------------------------------------------//
